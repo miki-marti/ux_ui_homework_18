@@ -12,6 +12,94 @@
     position: fixed;
 }
 
+img.menu {
+position: absolute;
+left: 36px;
+right: 300px;
+top: 78px;
+bottom: 2000px;
+}
+
+img.logo_mobile {
+position: absolute;
+width: 134px;
+height: 81px;
+left: 120px;
+right: 121px;
+top: 44px;
+bottom: 1981px;
+}
+
+img.about_mobile {
+position: absolute;
+width: 310px;
+height: 684px;
+left: 39px;
+top: 150px;
+}
+
+/* Style buttons */
+.btn_mobile {
+  background-color:  #BD3147;
+  border: none;
+  padding: 20px 40px;
+  cursor: pointer;
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 24px;
+/* identical to box height, or 60% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.002em;
+
+color: rgba(255, 255, 255, 0.7);
+
+
+position: absolute;
+width: 300px;
+height: 46px;
+left: 65px;
+top: 871px;
+
+
+border-radius: 32px;
+}
+
+/* Darker background on mouse-over */
+.btn_mobile:hover {
+  background-color: #BD3147;
+  color: white;
+  border-radius: 32px;
+}
+
+img.skills_mobile {
+  position: absolute;
+  width: 200px;
+  height: 882px;
+  left: 105px;
+  top: 1019px;
+
+}
+
+img.footer_mobile {
+
+position: absolute;
+width: 335px;
+height: 85px;
+left: 20px;
+top: 1957px;
+
+}
+
+
+
+
+
+
   
  
 img.Logo_original {
@@ -147,15 +235,44 @@ left: 513px;
 top: 1651px;
 
 }
+
+@media screen and (max-width: 800px) {
+
+div.pc { 
+  display: none;
+ }
+
+img.skills {
+  display: none;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+div.iphone { 
+  display: none;
+ }
+
+}
+
+</style>
+
+   
      </style>
     
      </head>
 
   <header>
     <div class="block"> </div>
-    <div>
+
+    <div class="iphone">
+
+      <img class="menu" src="menu_iphone.png">
+    <img class="logo_mobile" src="logo_iphone.png">
+    </div>    
+
+    <div class="pc">
       <img class="Logo_original" src="Logo_original.png">
-    </div>
     <div>
       <ul>
         <li class="home"><a href=”iterated_index.html”>Home</a></li>
@@ -163,6 +280,8 @@ top: 1651px;
         <li class="about"><a href=”iterated_index2.html”>About</a></li>
       </ul>
           </div>
+          </div>
+
   </header>
   
 <body>
@@ -170,6 +289,23 @@ top: 1651px;
     
   </div>
 <section>
+  <div class="iphone">
+  <img class="about_mobile" src="about_mobile.png">
+   <!-- Add icon library -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <!-- Auto width -->
+   <button class="btn_mobile"><i class="fa fa-download"></i> Download Resume</button>
+
+   <img class="skills_mobile" src="skills_mobile.png">
+
+   <img class="footer_mobile" src="footer_mobile.png">
+
+   </div>
+
+
+  </div>
+  <div class="pc">
   <div>
     <img class="about" src="about.png">
   </div>
@@ -193,6 +329,8 @@ top: 1651px;
   
 
 </section>
+</div>
+
 </body>
 
 <footer>
